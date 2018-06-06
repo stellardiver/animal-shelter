@@ -3,7 +3,7 @@
 
 .house {
   display: flex;
-  padding: 355px 0 268px;
+  padding: 250px 0 277px;
 }
 
 .house__heading {
@@ -28,4 +28,16 @@
   @include button;
   width: 208px;
   padding: 10px 0;
+
+  &:hover,
+  &:focus {
+    background-color: #fddcc4;
+    border: 2px solid #fddcc4;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #fdc8a2;
+    border: 2px solid #fdc8a2;
+  }
 }

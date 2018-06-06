@@ -5,6 +5,11 @@ body {
   @include fonts;
   min-width: 1170px;
   max-width: 100%;
+
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 1920px;
+  background-position-x: center;
 }
 
 .visually-hidden {

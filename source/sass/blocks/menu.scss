@@ -9,7 +9,18 @@
 }
 
 .menu__link {
+  position: relative;
+
+  display: block;
+
   text-decoration: none;
 
   @include fonts($line-height: 29px, $color: $very-lite-grey);
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    border-bottom: 2px solid $desert-sand;
+    outline: none;
+  }
 }

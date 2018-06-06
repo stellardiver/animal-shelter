@@ -48,3 +48,8 @@
   text-align: center;
   letter-spacing: 0.5px;
 }
+
+@mixin btn-reset {
+  border: none;
+  background-color: transparent;
+}

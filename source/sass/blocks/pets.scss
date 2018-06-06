@@ -19,6 +19,8 @@
 
 .pets__list {
   @include reset-list;
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   margin: 0 auto 65px;
@@ -47,6 +49,17 @@
   padding: 7px 0;
 
   text-transform: capitalize;
+
+  &:hover,
+  &:focus {
+    background-color: $desert-sand;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #efb58b;
+    border: 2px solid #efb58b;
+  }
 }
 
 .pets__link {
@@ -54,4 +67,57 @@
   width: 267px;
   padding: 7px 0;
   margin: 0 auto;
+
+  &:hover,
+  &:focus {
+    background-color: #fddcc4;
+    border: 2px solid #fddcc4;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #fdc8a2;
+    border: 2px solid #fdc8a2;
+  }
+}
+
+.pets__button {
+  @include btn-reset;
+  position: absolute;
+
+  width: 45px;
+  height: 45px;
+
+  border: 2px solid $desert-sand;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $desert-sand;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #efb58b;
+    border: 2px solid #efb58b;
+  }
+}
+
+.pets__button--left {
+  top: 180px;
+  left: -110px;
+
+  background-image: url("../img/long-left-arrow.svg");
+}
+
+.pets__button--right {
+  top: 180px;
+  right: -110px;
+
+  background-image: url("../img/long-right-arrow.png");
 }
