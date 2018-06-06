@@ -1,16 +1,117 @@
 @import "../mixins.scss";
 @import "../variables.scss";
 
+.donation {
+  display: flex;
+  padding: 65px 0 80px;
+
+  background-color: $white-smoke;
+}
+
+.donation__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.donation__content {
+  width: 370px;
+  margin-right: 215px;
+
+  &::before {
+    position: absolute;
+    top: 23px;
+    left: 25px;
+
+    content: "";
+    width: 505px;
+    height: 261px;
+    display: block;
+
+    background-image: url("../img/dog.png");
+    background-repeat: no-repeat;
+  }
+}
+
 .donation__heading {
   @include heading-font;
+  width: 370px;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .donation__bank {
+  @include margin-padding-reset;
   @include heading-font($font-size: 15px, $line-height: 25px);
+  width: 320px;
+  margin-bottom: 10px;
+
   letter-spacing: 1px;
 }
 
 .donation__legal {
+  @include margin-padding-reset;
   @include fonts($font-size: 12px, $line-height: 18px, $color: #b2b2b2);
+  width: 353px;
+
   font-style: italic;
+}
+
+.donation__form {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+
+    content: "";
+    width: 30px;
+    height: 27px;
+    display: block;
+
+    background-image: url("../img/credit-card (1).svg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+  }
+}
+
+.donation__input {
+  @include font-info($line-height: 15px, $color: $nero);
+  width: 250px;
+  padding: 10px 10px 10px 60px;
+  margin-bottom: 30px;
+
+  background-color: $desert-sand;
+  border: none;
+  border-radius: 8px;
+}
+
+.donation__input::placeholder {
+  @include font-info($color: $nero);
+  opacity: 1;
+  letter-spacing: 0.5px;
+}
+
+.donation__input::-webkit-input-placeholder {
+  @include font-info($color: $nero);
+  letter-spacing: 0.5px;
+}
+
+.donation__input::-moz-placeholder {
+  @include font-info($color: $nero);
+  opacity: 1;
+  letter-spacing: 0.5px;
+}
+
+.donation__input:-moz-placeholder {
+  @include font-info($color: $nero);
+  opacity: 1;
+  letter-spacing: 0.5px;
+}
+
+.donation__input:-ms-input-placeholder {
+  @include font-info($color: $nero);
+  letter-spacing: 0.5px;
 }

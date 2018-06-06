@@ -1,10 +1,51 @@
 @import "../mixins.scss";
 @import "../variables.scss";
 
+.introduction {
+  display: flex;
+  padding: 115px 0;
+}
+
 .introduction__heading {
   @include heading-font;
+  display: block;
+  width: 315px;
+  padding-bottom: 30px;
+}
+
+.introduction__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.introduction__content {
+  width: 430px;
+  margin-right: 155px;
+
+  &::before {
+    position: absolute;
+    top: -20px;
+    left: 195px;
+
+    content: "";
+    width: 300px;
+    height: 408px;
+    display: block;
+
+    background-image: url("../img/pets.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .introduction__text {
+  @include margin-padding-reset;
+  width: 430px;
+
   color: #4c4c4c;
+}
+
+.introduction__text--par2 {
+  padding-top: 30px;
 }

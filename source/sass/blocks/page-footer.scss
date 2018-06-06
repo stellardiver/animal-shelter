@@ -1,14 +1,50 @@
 @import "../mixins.scss";
 @import "../variables.scss";
 
+.page-footer {
+  display: flex;
+  padding: 65px 0 68px;
+
+  background-image: url("../img/bg-footer.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
 .page-footer__list {
+  display: flex;
+
   @include reset-list;
+}
+
+.page-footer__item:first-child {
+  margin-right: 170px;
 }
 
 .page-footer__heading {
   @include heading-font($color: #ffffff);
+  display: block;
+}
+
+.page-footer__heading--questions {
+  width: 290px;
+  margin-bottom: 35px;
+}
+
+.page-footer__heading--visit {
+  width: 270px;
+  margin-bottom: 25px;
 }
 
 .page-footer__info {
-  @include font-info;
+  @include margin-padding-reset;
+  @include font-info($line-height: 23px);
+  width: 260px;
+}
+
+.page-footer__info--email {
+  margin-bottom: 35px;
+}
+
+.page-footer__info--boston {
+  margin-bottom: 20px;
 }

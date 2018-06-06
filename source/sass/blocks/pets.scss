@@ -1,14 +1,57 @@
 @import "../mixins.scss";
 @import "../variables.scss";
 
+.pets {
+  display: flex;
+  padding: 40px 0 68px;
+  background-color: $white-smoke;
+}
+
 .pets__heading {
   @include heading-font;
+  display: block;
+  width: 410px;
+  margin: 0 auto 30px;
+
+
+  text-align: center;
 }
 
 .pets__list {
   @include reset-list;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 65px;
+  width: 915px;
+}
+
+.pets__item {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 50px -10px $very-lite-grey;
 }
 
 .pets__name {
   @include heading-font($font-size: 20px, $line-height: 45px);
+  margin: 0 auto 10px;
+}
+
+.pets__link-modal {
+  @include button($background-color: transparent);
+  width: 180px;
+  margin: 0 auto 34px;
+  padding: 7px 0;
+
+  text-transform: capitalize;
+}
+
+.pets__link {
+  @include button;
+  width: 267px;
+  padding: 7px 0;
+  margin: 0 auto;
 }

@@ -3,6 +3,8 @@
 
 body {
   @include fonts;
+  min-width: 1170px;
+  max-width: 100%;
 }
 
 .visually-hidden {
@@ -14,4 +16,10 @@ body {
   margin: -1px;
   padding: 0;
   border: 0;
+}
+
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 20px;
 }

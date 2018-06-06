@@ -1,14 +1,99 @@
 @import "../mixins.scss";
 @import "../variables.scss";
 
+.help {
+  display: flex;
+  padding: 65px 0 75px;
+}
+
 .help__heading {
   @include heading-font;
+  display: block;
+  width: 330px;
+  margin: 0 auto 40px;
+
+  text-align: center;
 }
 
 .help__list {
   @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  width: 975px;
+  margin: 0 auto;
+}
+
+.help__item {
+  position: relative;
+
+  display: flex;
+  align-items: flex-end;
+  width: 195px;
+  height: 140px;
+
+  background-repeat: no-repeat;
+
+  &:nth-child(6) {
+    margin-left: 80px;
+  }
 }
 
 .help__name {
+  @include margin-padding-reset;
   @include heading-font($font-size: 20px, $line-height: 24px);
+  margin: 0 auto;
+}
+
+.help__item--food {
+  background-image: url("../img/cat-food.svg");
+  background-size: 50px;
+  background-position: center 20px;
+}
+
+.help__item--transport {
+  background-image: url("../img/ambulance.svg");
+  background-size: 50px;
+  background-position: center 20px;
+}
+
+.help__item--toys {
+  background-image: url("../img/ball.svg");
+  background-size: 50px;
+  background-position: center 20px;
+}
+
+.help__item--cups {
+  background-image: url("../img/bowl.svg");
+  background-size: 50px;
+  background-position: center 20px;
+}
+
+.help__item--shampoos {
+  background-image: url("../img/shampoo.svg");
+  background-size: 50px;
+  background-position: center 20px;
+}
+
+.help__item--vitamins {
+  background-image: url("../img/pills.svg");
+  background-size: 50px;
+  background-position: center 30px;
+}
+
+.help__item--medicines {
+  background-image: url("../img/syringe.svg");
+  background-size: 50px;
+  background-position: center 30px;
+}
+
+.help__item--leashes {
+  background-image: url("../img/leash.svg");
+  background-size: 50px;
+  background-position: center 30px;
+}
+
+.help__item--sleep {
+  background-image: url("../img/cat.svg");
+  background-size: 50px;
+  background-position: center 30px;
 }

@@ -3,6 +3,9 @@
 
 .menu {
   @include reset-list;
+  display: flex;
+  justify-content: space-between;
+  width: 470px;
 }
 
 .menu__link {

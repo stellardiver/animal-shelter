@@ -1,16 +1,31 @@
 @import "../mixins.scss";
 @import "../variables.scss";
 
+.house {
+  display: flex;
+  padding: 355px 0 268px;
+}
+
 .house__heading {
+  @include margin-padding-reset;
   @include fonts(Georgia, 44px, 57px, 400, #ffffff);
+  width: 350px;
+  display: block;
+  padding-bottom: 30px;
+
+  letter-spacing: 2px;
 }
 
 .house__text {
+  @include margin-padding-reset;
+  width: 455px;
+  padding-bottom: 35px;
+
   color: $very-lite-grey;
 }
 
 .house__button {
-  text-decoration: none;
-
-  @include fonts(Georgia, 17px, 27px, $color: $nero);
+  @include button;
+  width: 208px;
+  padding: 10px 0;
 }
