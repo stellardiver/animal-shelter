@@ -1,0 +1,12 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.menu {
+  @include reset-list;
+}
+
+.menu__link {
+  text-decoration: none;
+
+  @include fonts($line-height: 29px, $color: $very-lite-grey);
+}

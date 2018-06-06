@@ -1,0 +1,16 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.donation__heading {
+  @include heading-font;
+}
+
+.donation__bank {
+  @include heading-font($font-size: 15px, $line-height: 25px);
+  letter-spacing: 1px;
+}
+
+.donation__legal {
+  @include fonts($font-size: 12px, $line-height: 18px, $color: #b2b2b2);
+  font-style: italic;
+}

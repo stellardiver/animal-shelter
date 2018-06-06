@@ -1,0 +1,16 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.house__heading {
+  @include fonts(Georgia, 44px, 57px, 400, #ffffff);
+}
+
+.house__text {
+  color: $very-lite-grey;
+}
+
+.house__button {
+  text-decoration: none;
+
+  @include fonts(Georgia, 17px, 27px, $color: $nero);
+}

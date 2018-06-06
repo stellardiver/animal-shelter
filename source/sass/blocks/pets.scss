@@ -1,0 +1,14 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.pets__heading {
+  @include heading-font;
+}
+
+.pets__list {
+  @include reset-list;
+}
+
+.pets__name {
+  @include heading-font($font-size: 20px, $line-height: 45px);
+}

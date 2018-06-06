@@ -1,0 +1,10 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.introduction__heading {
+  @include heading-font;
+}
+
+.introduction__text {
+  color: #4c4c4c;
+}

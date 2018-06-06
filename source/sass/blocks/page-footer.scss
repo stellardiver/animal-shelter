@@ -1,0 +1,14 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.page-footer__list {
+  @include reset-list;
+}
+
+.page-footer__heading {
+  @include heading-font($color: #ffffff);
+}
+
+.page-footer__info {
+  @include font-info;
+}
